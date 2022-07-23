@@ -1,0 +1,76 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "type": "rectangle",
+      "version": 210,
+      "versionNonce": 253060526,
+      "isDeleted": false,
+      "id": "6pCWjhddqbF9n5lf28III",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": -785.7036861843532,
+      "y": -636.3544849214087,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "width": 595.3333435058594,
+      "height": 296.66668701171886,
+      "seed": 111185714,
+      "groupIds": [
+        "Nbj6diP1bv_nP3hF6mqRm"
+      ],
+      "strokeSharpness": "sharp",
+      "boundElements": [],
+      "updated": 1658585181528,
+      "link": null,
+      "locked": false
+    },
+    {
+      "type": "text",
+      "version": 688,
+      "versionNonce": 597660722,
+      "isDeleted": false,
+      "id": "S-FWRrG952InUY-Af2cXu",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": -746.1885383683017,
+      "y": -616.945405109619,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "width": 542,
+      "height": 261,
+      "seed": 483964142,
+      "groupIds": [
+        "Nbj6diP1bv_nP3hF6mqRm"
+      ],
+      "strokeSharpness": "sharp",
+      "boundElements": [],
+      "updated": 1658585181528,
+      "link": null,
+      "locked": false,
+      "fontSize": 20,
+      "fontFamily": 3,
+      "text": "count(*)的优化，选择最小的那棵树遍历\n\n1. 需求是显示记录的总数？只能自己计数\n    a. 通过mysql的事务保存总数\n    b. 先插入数据，在增加计数，计数行先加锁会降低并发\n\n2. count(*), count(主键id), count(1)\n    返回总行数，count(字段) 返回不为NULL的总\n    行数\n3. count(*)≈count(1)>count(主键)>count(字段)",
+      "baseline": 256,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "count(*)的优化，选择最小的那棵树遍历\n\n1. 需求是显示记录的总数？只能自己计数\n    a. 通过mysql的事务保存总数\n    b. 先插入数据，在增加计数，计数行先加锁会降低并发\n\n2. count(*), count(主键id), count(1)\n    返回总行数，count(字段) 返回不为NULL的总\n    行数\n3. count(*)≈count(1)>count(主键)>count(字段)"
+    }
+  ],
+  "appState": {
+    "gridSize": null,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}
